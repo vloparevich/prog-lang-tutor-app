@@ -19,3 +19,10 @@ router.get('/seed-my-db', async (req, res, next) => {
     );
   }
 });
+
+router.get('/seed-my-dbs', (req, res, next) => {
+  console.log('TEST');
+  res.status(201).json({ success: true, message: 'DB has been ruined' });
+});
+
+module.exports = router;
